@@ -50,7 +50,6 @@ signed main(){
             int a,b;
             cin>>a>>b;
             adj[a].push_back(b);
-            adj[b].push_back(a);
         }
         bfs(0);
     }
