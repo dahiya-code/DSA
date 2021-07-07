@@ -81,12 +81,18 @@ void sort(int *arr, int l, int r){
 /*Quick Sort*/
 
 int partition(int *arr, int l, int r){
-    int pivot=arr[l], j=l;
-    for(int i=l+1;i<=r;i++){
-        if(arr[i]<pivot){
-            swap()
-        }
-    }
+    int pivot=arr[l];
+   int j=l;
+   for(int i=l+1;i<=r;i++)
+      {
+        if(arr[i]<=pivot)
+            {j++;
+              swap(arr[j], arr[i]);
+            }
+
+      }
+      swap(arr[l], arr[j]);
+  	return j;
 }
 
 void sort(int *arr, int l, int r){
